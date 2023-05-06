@@ -2,6 +2,9 @@ import frida
 import os
 import psutil
 
+def message_handler(message, payload):
+	print(message)
+
 def start_game():
 	os.system("start explorer shell:AppsFolder\\Microsoft.BadgerWin10_8wekyb3d8bbwe!Game")
 
